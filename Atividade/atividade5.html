@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Compra de Passagem Aérea</title>
+    <link rel="stylesheet" href="atividade5.css">
+    <script src="atividade5.js" defer></script>
+</head>
+<body>
+    <div class="corpo">
+        <h1>COMPRA DE PASSAGEM AÉREA</h1>
+
+        <label for="nome">DIGITE O NOME DO PASSAGEIRO</label>
+        <input type="text" id="nome">
+        <br><br>
+
+        <label for="idade">DIGITE A IDADE DO PASSAGEIRO</label>
+        <input type="number" id="idade">
+        <br><br>
+
+        <label for="distancia">DIGITE A DISTÂNCIA DA VIAGEM EM KM</label>
+        <input type="number" id="distancia" step="0.01">
+        <br><br>
+
+        <label for="classe">SELECIONE A CLASSE DA PASSAGEM</label>
+        <select id="classe">
+            <option value="economica">ECONÔMICA</option>
+            <option value="executiva">EXECUTIVA</option>
+            <option value="primeira">PRIMEIRA CLASSE</option>
+        </select>
+        <br><br>
+
+        <label for="bagagem">DIGITE O PESO DA BAGAGEM EM KG</label>
+        <input type="number" id="bagagem" step="0.01">
+        <br><br>
+
+        <label for="antecedencia">DIGITE A ANTECEDÊNCIA DA COMPRA EM DIAS</label>
+        <input type="number" id="antecedencia">
+        <br><br>
+
+        <button onclick="calcular()">CALCULAR PASSAGEM</button>
+
+        <h2 id="resultado"></h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Aprovação de Empréstimo</title>
+    <link rel="stylesheet" href="atividade1.css">
+    <script src="atividade1.js" defer></script>
+</head>
+<body>
+    <div class="corpo">
+        <h1>EMPRESTIMO PARA O CLIENTE</h1>
+            <label for="nome">DIGITE O NOME DO CLIENTE</label>
+                <input type="text" id="nome">
+                    <br><br>
+            <label for="salario">DIGITE O SALARIO MENSAL</label>
+                 <input type="number" id="salario" step="0.01">
+                    <br><br>
+            <label for="emprestimo">DIGITE O VALOR DO EMPRESTIMO SOLICITADO</label>
+                 <input type="number" id="emprestimo" step="0.01">
+                    <br><br>
+                    <label for="parcelas">DIGITE A QUANTIDADE DE PARCELAS</label>
+                 <select id="parcelas">
+                    <option value="12">12</option>
+                    <option value="24">24</option>
+                    <option value="36">36</option>
+                    <option value="48">48</option>
+                    <option value="60">60</option>
+                    <option value="72">72</option>
+                    <option value="84">84</option>
+                    <option value="96">96</option>
+                 </select>
+
+                 <br><br>
+                 <label for="divida">DIGITE O VALOR DAS OUTRAS DIVIDAS</label>
+                 <input type="number" id="divida" step="0.01">
+                    <button onclick="calcular()">CALCULAR SEU EMPRESTIMO</button>
+    <h2 id="resultado"></h2>
+    </div>
+</body>
+</html>

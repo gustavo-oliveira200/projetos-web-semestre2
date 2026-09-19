@@ -1,0 +1,50 @@
+body{
+background-color:#172554;
+font-family:Georgia,'Times New Roman',Times,serif;
+text-align:center;
+color:white;
+}
+.corpo{
+background-color:#1E40AF;
+width:500px;
+margin:50px auto;
+padding:30px;
+border-radius:15px;
+}
+h1{
+margin-bottom:30px;
+}
+label{
+display:block;
+margin-bottom:8px;
+}
+input,select{
+width:80%;
+padding:10px;
+border-radius:8px;
+border:none;
+font-family:Georgia,'Times New Roman',Times,serif;
+box-sizing:border-box;
+}
+select{
+background-color:white;
+color:black;
+cursor:pointer;
+}
+button{
+background-color:#F97316;
+color:white;
+border:none;
+margin:20px auto;
+padding:12px 20px;
+border-radius:8px;
+font-family:Georgia,'Times New Roman',Times,serif;
+cursor:pointer;
+}
+button:hover{
+background-color:#EA580C;
+}
+#resultado{
+margin-top:20px;
+line-height:1.8;
+}

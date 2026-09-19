@@ -1,0 +1,107 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    flex: 1;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.btn-remover {
+    width: 100%;
+    background-color: #8b0000;
+}
+
+#listaProdutos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.produto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+.indice {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.vazio {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}
+
+#mensagem {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}

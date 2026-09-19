@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notas dos Alunos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Cadastro de Notas</h1>
+
+        <p class="descricao">
+            Digite as notas dos alunos e adicione ao vetor.
+        </p>
+
+        <div class="formulario">
+
+            <input
+                type="number"
+                id="nota"
+                placeholder="Digite a nota"
+                min="0"
+                max="10"
+                step="0.1"
+            >
+
+            <button onclick="adicionarNota()">
+                Adicionar Nota
+            </button>
+
+        </div>
+
+        <h2>Notas cadastradas</h2>
+
+        <ul id="listaNotas"></ul>
+
+        <div class="resultado">
+
+            <p>
+                Quantidade de notas:
+                <strong id="quantidade">0</strong>
+            </p>
+
+            <p>
+                Média:
+                <strong id="media">0.00</strong>
+            </p>
+
+            <p>
+                Maior nota:
+                <strong id="maior">0.00</strong>
+            </p>
+
+            <p>
+                Menor nota:
+                <strong id="menor">0.00</strong>
+            </p>
+
+        </div>
+
+        <button
+            class="btn-limpar"
+            onclick="limparNotas()">
+
+            Limpar vetor
+
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

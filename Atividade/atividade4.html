@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Consumo de Energia</title>
+    <link rel="stylesheet" href="atividade4.css">
+    <script src="atividade4.js" defer></script>
+</head>
+<body>
+    <div class="corpo">
+        <h1>CONSUMO DE ENERGIA ELÉTRICA</h1>
+
+        <label for="nome">DIGITE O NOME DO CONSUMIDOR</label>
+        <input type="text" id="nome">
+        <br><br>
+
+        <label for="tipo">SELECIONE O TIPO DE CONSUMIDOR</label>
+        <select id="tipo">
+            <option value="residencial">RESIDENCIAL</option>
+            <option value="comercial">COMERCIAL</option>
+            <option value="industrial">INDUSTRIAL</option>
+        </select>
+        <br><br>
+
+        <label for="consumo">DIGITE O CONSUMO MENSAL EM KWH</label>
+        <input type="number" id="consumo" step="0.01">
+        <br><br>
+
+        <button onclick="calcular()">CALCULAR CONSUMO</button>
+
+        <h2 id="resultado"></h2>
+    </div>
+</body>
+</html>

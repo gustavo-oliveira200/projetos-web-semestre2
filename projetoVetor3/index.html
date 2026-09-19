@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manipulação de Vetores</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Gerenciador de Produtos</h1>
+
+        <p class="descricao">
+            Exemplo de manipulação de vetores utilizando JavaScript.
+        </p>
+
+        <div class="card">
+
+            <label for="produto">Nome do produto:</label>
+
+            <input type="text" id="produto" placeholder="Digite o nome do produto">
+
+            <div class="botoes">
+
+                <button onclick="adicionarInicio()">
+                    Adicionar no Início
+                </button>
+
+                <button onclick="adicionarFim()">
+                    Adicionar no Fim
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Remover produtos</h2>
+
+            <div class="botoes">
+
+                <button onclick="removerPrimeiro()">
+                    Remover Primeiro
+                </button>
+
+                <button onclick="removerUltimo()">
+                    Remover Último
+                </button>
+
+            </div>
+
+            <label for="posicao">
+                Posição do produto:
+            </label>
+
+            <input type="number" id="posicao" placeholder="Ex: 2" min="0">
+
+            <button class="btn-remover" onclick="removerEspecifico()">
+                Remover Específico
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Vetor de Produtos</h2>
+
+            <div id="listaProdutos"></div>
+
+        </div>
+
+
+        <div id="mensagem"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
